@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    This is the form for ordering cookies!
+    <form action="/create_cookie_order" method="post">
+    {% csrf_token %}
+    <select name="baked_goods" id="baked_goods">
+        <option value="cookies">Custom Sugar Cookies</option>
+        <option value="cupcakes">Cupcakes</option>
+        <option value="mini_cupcakes">Mini Cupcakes</option>
+      </select>
+    <input type="submit" value="Next">
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    This is the form for ordering cookies!
+    <form action="/create_cookie_order" method="post">
+    {% csrf_token %}
+    <p>First Name: <input type="text" name="first_name" id="first_name"></p>
+    <p>Last Name: <input type="text" name="last_name" id="last_name"></p>
+    <p>Email: <input type="email" name="email" id="email"></p>
+    <p>Phone Number: <input type="tel" id="phone" name="phone" placeholder="123-456-7890"></p>
+    <p>Preferred Method of Communication</p> 
+    <input type="radio" name="emailpref" id="emailpref">Email
+    <input type="radio" name="phonepref" id="phonepref">Phone
+    <input type="radio" name="textpref" id="textpref">Text
+    </br>
+    <input type="submit" value="Next">
+    </form>
+</body>
+</html>

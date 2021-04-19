@@ -1,0 +1,214 @@
+
+#navbar > h2{
+    display: inline-block;
+    width: 8%;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 2%;
+}
+
+#navbar > img{
+    display: inline-block;
+    width: 20%;
+    background-color: white;
+    margin-left: 7%;
+    border: white 2px solid;
+    border-radius: 100px;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#navbar > button{
+    float: right;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin-right: 3%;
+    margin-top: 1%;
+    font-size: 20px;
+    border: lightgrey;
+    padding: .5%;
+}
+
+#maincontent > button{
+    background-color: rgb(94, 94, 94);
+    border-radius: 20px;
+    font-size: 20px;
+    border: rgb(94, 94, 94);
+    padding: 1%;
+    position: relative;
+    top: 600px;
+    right: 430px;
+}
+
+#maincontent{
+    position: relative;
+    bottom: 40px;
+    height: 1000px;
+}
+
+#maincontent > h1{
+    position: relative;
+    top: 500px;
+    font-size: 75px;
+    margin-left: 5%;
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 75%;
+}
+
+#occasions > h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#occasions > img{
+    width: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#occasions > #wordoccasions{
+    margin-left: 10%;
+}
+
+#occasions > #wordoccasions > h2{
+    display: inline-block;
+    margin-right: 19%;
+}
+
+#works > h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#works > div{
+    width: 20%;
+    height: 350px;
+    display: inline-block;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 1%;
+}
+
+#works > div > img{
+    width: 50%;
+}
+
+#works > #select{
+    margin-left: 11%;
+    margin-right: 5%;
+}
+
+#works > #describe{
+    margin-right: 5%;
+}
+
+#picline > img{
+    margin-top: 5%;
+    width: 33.1%;
+}
+
+#reviews > div{
+    margin-top: 3%;
+    width: 20%;
+    display: inline-block;
+    padding: 1%;
+    text-align: center;
+    vertical-align: top;
+}
+
+#reviews > #r1{
+    margin-left: 11%;
+    margin-right: 5%;
+}
+
+#reviews > #r2{
+    margin-right: 5%;
+}
+
+#creations > h1{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+#creations > img{
+    width: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 5%;
+}
+
+#footer{
+    background-color: lightgrey;
+}
+
+#footer > #footer_logo{
+    margin-left: 40%;
+    background-color: white;
+    border-radius: 100px;
+    position: relative;
+    bottom: 50px;
+}
+
+#footer > a{
+    padding: 3px;
+    
+}
+
+#footer > #ordernow{
+    padding-left: 1%;
+}
+
+#footer > #social > #insta{
+    margin-left: 91%;
+    padding-right: 1%;
+}
+
+#footer > #social{
+    display: inline-block;
+    width:68%;
+}
+
+#footer > #social > img{
+    width: 50px;
+    display: inline-block;
+}
+
+#phone > img{
+    width: 30px;
+    display: inline-block;
+}
+
+#phone > p{
+    display: inline-block;
+}
+
+/* #contactinfo{
+    display: inline-block;
+} */
+
+#contactinfo > div{
+    display: inline-block;
+    margin-top: 1%;
+    padding-left: 1%;
+}
+
+#email > img{
+    width: 30px;
+    display: inline-block;
+}
+
+#email > p{
+    display: inline-block;
+    /* vertical-align: top; */
+
+}
+
+#footer > p{
+    text-align: center;
+    padding-bottom: 1%;;
+}
