@@ -1,21 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-</head>
-<body>
-    This is the form for ordering cookies!
-    <form action="/create_cookie_order" method="post">
+{% extends "base.html" %}
+    {% block content %}    
+    <form action="/custinfo" method="post">
     {% csrf_token %}
-    <select name="baked_goods" id="baked_goods">
-        <option value="cookies">Custom Sugar Cookies</option>
-        <option value="cupcakes">Cupcakes</option>
-        <option value="mini_cupcakes">Mini Cupcakes</option>
-      </select>
-    <input type="submit" value="Next">
+        <select name="baked_goods" id="baked_goods">
+            <option value="" disabled selected>Select your Baked Good</option>
+            <option value="cookies">Custom Sugar Cookies</option>
+            <option value="cupcakes">Cupcakes</option>
+            <option value="mini_cupcakes">Mini Cupcakes</option>
+        </select>
+    </br>
+    <br>
+        <select name="occasion" id="occasion">
+        <option value="" disabled selected>Select your Occasion</option>
+            <option value="birthday">Birthday</option>
+            <option value="graduation">Graduation</option>
+            <option value="wedding">Wedding</option>
+            <option value="holiday">Holiday</option>
+            <option value="other">Other</option>
+        </select>
+        <h2>When do you need them by?</h2>
+            <input type="date" name="date_needed" id="date">
+        <h2>Quantity?</h2>
+        <p>Minimum order of 1 dozen. Cookies must be ordered by the dozen (expections can be made for larger orders).</p>
+            <input type="number" name="dozen" id="dozen">
+        <br>
+        <h2>Design Details</h2>
+            <textarea name="design" id="design" cols="40" rows="10" placeholder="Please let us know what design you are looking for. If you are not sure, we can work with you to create your vision."></textarea>
+        <h2>Upload Your Image</h2>
+        <p>Have an image that would help describe your vision? Upload it here!</p>
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+        <h2>How Much Help Would You Like?</h2>
+        <p>Deciding on a cookie design can be difficult. I'm here to help if you would like it!</p>
+            <input type="radio" name="nohelp" id="nohelp">I know what I want!
+            <br>
+            <input type="radio" name="somehelp" id="somehelp">I have a good idea, but could use some help.
+            <br>
+            <input type="radio" name="allhelp" id="allhelp">I have no idea. I'd love a lot of help.
+        <h2>Presentation</h2>
+            <input type="radio" name="box" id="box">Bakery Box
+            <br>
+            <input type="radio" name="wrapped" id="wrapped">Indivdually wrapped within a bakery box. ($2 charge per dozen)
+        <br>
+        <br>
+        <input type="submit" value="Next">
     </form>
+    {% endblock %}
 </body>
 </html>

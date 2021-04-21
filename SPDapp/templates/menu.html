@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Menu and Pricing
+{% extends "base.html" %}
+    {% block content %}
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'menu.css' %}">
+    </head>
+    <div id="menuheading">
+        <h2>Menu & Pricing</h2>
+    </div>
+    <div id="cookies">
+        <h3>Decorated Sugar Cookies</h3>
+        <img src="{% static 'baby.jpeg' %}" alt="">
+        <p>$32/dozen</p>
+        <p>Personalized exactly how you want them!<br><br></p>
+    </div>
+    <div id="cupcakes">
+        <h3>Cupcakes</h3>
+        <img src="{% static 'baby.jpeg' %}" alt="">
+        <p>$25/dozen</p>
+        <p>Flavors: Vanilla or Chocolate<br>Buttercream Frosting</p>
+    </div>
+    <div id="mini">
+        <h3>Mini Cupcakes</h3>
+        <img src="{% static 'baby.jpeg' %}" alt="">
+        <p>$18/dozen</p>
+        <p>Flavors: Vanilla or Chocolate<br>Buttercream Frosting</p>
+    </div>
+    {% endblock %}
+
 </body>
 </html>

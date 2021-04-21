@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPD Home Page</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-    <div id="navbar">
-            <h2>My Story</h2>
-            <h2>Gallery</h2> 
-            <h2>Pricing</h2>
-            <h2>FAQ</h2>
-        <img src="{% static 'SPD Logo 1 1.png' %}" alt="Logo">
-        <button><a href="/custinfo" style="text-decoration: none; color: white;">Order Now</button></a>
-    </div>
+{% extends "base.html" %}
+    {% block content %}
+    <!-- {% load static %} -->
     <div id="maincontent" style="background-image: url('/static/homepage1.jpg');">
         <h1>Perfectly</br> Personalized</h1>
-        <button><a href="/custinfo" style="text-decoration: none; color: white;">Order Now</button></a>
+        <button><a href="/cookie_select" style="text-decoration: none; color: white;">Order Now</button></a>
     </div>
     <div id="occasions">
         <h1>Cookies & Cupcakes</br> for Every Occasion</h1>
@@ -107,5 +91,6 @@
         </div>
         <p>Sweet Petite Design 2021</p>
     </div>
+    {% endblock %}
 </body>
 </html>

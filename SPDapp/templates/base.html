@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPD Home Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <h2><a href="/my_story">My Story</a></h2>
+        <h2><a href="/gallery">Gallery</a></h2>
+        <h2><a href="/menu">Pricing</a></h2>
+        <h2><a href="/faq">FAQ</a></h2>
+        <a href="/"><img src="{% static 'Logo 1.png' %}" alt="Logo"></a>
+        <button><a href="/cookie_select" style="text-decoration: none; color: white;">Order Now</button></a>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+</html>

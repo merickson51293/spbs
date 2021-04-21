@@ -1,0 +1,26 @@
+#menuheading > h2{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 48pt;
+}
+#cookies, #cupcakes, #mini{
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    background-color: lightgrey;
+    height: 30%;
+    margin-top: 1%;
+}
+div > img{
+    width: 50%;
+}
+
+#cookies{
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#cupcakes{
+    margin-right: 5%;
+}
+
