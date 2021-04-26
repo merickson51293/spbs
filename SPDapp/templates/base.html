@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPD Home Page</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
 </head>
@@ -16,9 +16,34 @@
         <h2><a href="/gallery">Gallery</a></h2>
         <h2><a href="/menu">Pricing</a></h2>
         <h2><a href="/faq">FAQ</a></h2>
-        <a href="/"><img src="{% static 'Logo 1.png' %}" alt="Logo"></a>
-        <button><a href="/cookie_select" style="text-decoration: none; color: white;">Order Now</button></a>
+        <a href="/"><img src="{% static 'pics/Logo 1.png' %}" alt="Logo"></a>
+        <button><a href="/cookie_select" style="text-decoration: none; color: black;">Order Now</button></a>
     </div>
     {% block content %}{% endblock %}
+    <div id="footer">
+        <img src="{% static 'pics/Logo 2.png' %}" alt="" id="footer_logo"></br>
+        <a href="" id="ordernow">Order Now</a>
+        <a href="">My Story</a>
+        <a href="">Gallery</a>
+        <a href="">Menu & Pricing</a>
+        <a href="">FAQ</a>
+        <a href="">Refund Policy</a>
+        <a href="">Terms & Conditions</a>
+        <div id="social">
+            <img src="{% static 'pics/instagram.png' %}" id="insta" alt="">
+            <img src="{% static 'pics/facebook.png' %}" id="fb" alt="">
+        </div>
+        <div id="contactinfo">
+            <div id="phone">
+                <img src="{% static 'pics/phone.png' %}" alt="">
+                <p>616-780-5771</p>
+            </div>
+            <div id="email">
+                <img src="{% static 'pics/email.png' %}" alt="">
+                <p>sweetpetitedes@gmail.com</p>
+            </div>
+        </div>
+        <p>Sweet Petite Design 2021</p>
+    </div>
 </body>
 </html>

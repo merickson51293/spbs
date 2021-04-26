@@ -27,20 +27,22 @@
     z-index: 1;
 }
 
+
+
 #navbar > button{
     float: right;
-    background-color: lightgrey;
+    background-color: #EEEEEE;
     border-radius: 5px;
     margin-right: 3%;
     margin-top: 1%;
     font-size: 20px;
-    border: lightgrey;
+    border: #EEEEEE;
     padding: .5%;
 }
 
 #navbar > button:hover{
     float: right;
-    background-color: rgb(94, 94, 94);
+    background-color: #EEEEEE;
     border-radius: 5px;
     margin-right: 1.5%;
     margin-top: .5%;
@@ -104,9 +106,9 @@
 
 #works > div{
     width: 20%;
-    height: 350px;
+    height: 30%;
     display: inline-block;
-    background-color: lightgrey;
+    background-color: #EEEEEE;
     text-align: center;
     padding: 1%;
 }
@@ -160,15 +162,17 @@
 }
 
 #footer{
-    background-color: lightgrey;
+    background-color: #EEEEEE;
+    margin-top: 5%;
 }
 
 #footer > #footer_logo{
-    margin-left: 40%;
+    margin-left: 45.5%;
     background-color: white;
-    border-radius: 100px;
+    border-radius: 100%;
     position: relative;
     bottom: 50px;
+    width: 10%;
 }
 
 #footer > a{

@@ -1,0 +1,18 @@
+#storyheading > h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+#storycontent > img{
+    width: 60%;
+    height: 600px;
+    display: inline-block;
+}
+
+#storycontent > p{
+    display: inline-block;
+    width: 35%;
+ 
+    margin-left: 2%;
+    vertical-align: top;
+}

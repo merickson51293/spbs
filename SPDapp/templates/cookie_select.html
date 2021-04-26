@@ -1,5 +1,11 @@
 {% extends "base.html" %}
-    {% block content %}    
+    {% block content %} 
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/orderform.css' %}">
+    </head>
+    <div id="center">
+ 
     <form action="/custinfo" method="post">
     {% csrf_token %}
         <select name="baked_goods" id="baked_goods">
@@ -45,6 +51,7 @@
         <br>
         <input type="submit" value="Next">
     </form>
+</div>  
     {% endblock %}
 </body>
 </html>

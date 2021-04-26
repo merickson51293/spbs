@@ -1,6 +1,29 @@
 {% extends "base.html" %}
     {% block content %}
-    <h2>FAQ's</h2>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/faq.css' %}">
+    </head>
+    <div id="faqheading">
+        <h2>FAQ's</h2>
+    </div>
+    <div id="faqpicture">
+        <img src="{% static 'nurse.jpg' %}" alt="">
+        <img src="{% static 'getwell.jpg' %}" alt="">
+        <img src="{% static '80.jpg' %}" alt="">
+        <img src="{% static '80.jpg' %}" alt="">
+        <img src="{% static '80.jpg' %}" alt="">
+    </div>
+    <div id="questions">
+        <h2>How Do I Order?</h2>
+        <h3>ITS A BUTTON MORON!</h3>
+        <h2>I filled out the form, now what?</h2>
+        <h3>We will get back to you... Calm down!</h3>
+        <h2>How much notice do I need to give for ordering cookies?</h2>
+        <h3>More than you are probably giving us.</h3>
+        <h2>How Much Do Your Cookies Cost?</h2>
+        <h3>ITS A BUTTON MORON!</h3>
+    </div>
     {% endblock %}
 </body>
 </html>

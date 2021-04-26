@@ -1,6 +1,17 @@
 {% extends "base.html" %}
     {% block content %}
-    <h2>My Story</h2>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/story.css' %}">
+    </head>
+    <div id="storyheading">
+        <h2>My Story</h2>
+    </div>
+    <div id="storycontent">
+        <img src="{% static 'pics/birthday.jpeg' %}" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo esse laudantium accusantium est quis quaerat illum dignissimos fugiat alias repellendus quod in repellat perspiciatis placeat repudiandae, ad magnam. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellat quisquam expedita nihil porro corrupti maxime doloremque ipsam at saepe reprehenderit, vel corporis? Necessitatibus molestiae sunt tempora praesentium veniam laudantium eum!<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo esse laudantium accusantium est quis quaerat illum dignissimos fugiat alias repellendus quod in repellat perspiciatis placeat repudiandae, ad magnam. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellat quisquam expedita nihil porro corrupti maxime doloremque ipsam at saepe reprehenderit, vel corporis? Necessitatibus molestiae sunt tempora praesentium veniam laudantium eum!<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo esse laudantium accusantium est quis quaerat illum dignissimos fugiat alias repellendus quod in repellat perspiciatis placeat repudiandae, ad magnam. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellat quisquam expedita nihil porro corrupti maxime doloremque ipsam at saepe reprehenderit, vel corporis? Necessitatibus molestiae sunt tempora praesentium veniam laudantium eum!<br><br>- Megan Erickson</p>
+        
+    </div>
     {% endblock %}
 </body>
 </html>
