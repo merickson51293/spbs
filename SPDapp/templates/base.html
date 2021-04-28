@@ -16,14 +16,25 @@
     <div id="navbar">
         <h2><a href="/my_story">My Story</a></h2>
         <h2><a href="/gallery">Gallery</a></h2>
-        <h2><a href="/menu">Pricing</a></h2>
+        <h2><a href="/menu">Menu</a></h2>
         <h2><a href="/faq">FAQ</a></h2>
         <a href="/"><img src="{% static 'pics/Logo (1).png' %}" alt="Logo"></a>
         <button><a href="/cookie_select" style="text-decoration: none; color: white;">Order</button></a>
     </div>
+    <div id="collapse">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">My Story</a>
+            <a href="#">Gallery</a>
+            <a href="#">Menu</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+    </div>
     {% block content %}{% endblock %}
     <div id="footer">
-        <img src="{% static 'pics/Logo 2.png' %}" alt="" id="footer_logo"></br>
         <a href="" id="ordernow">Order Now</a>
         <a href="">My Story</a>
         <a href="">Gallery</a>
@@ -46,5 +57,17 @@
         </div>
         <p>Sweet Petite Design 2021</p>
     </div>
+<script>
+    function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
 </body>
 </html>
