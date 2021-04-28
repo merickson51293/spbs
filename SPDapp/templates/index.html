@@ -1,70 +1,73 @@
 {% extends "base.html" %}
     {% block content %}
     <!-- {% load static %} -->
-    <div id="maincontent" style="background-image: url('/static/pics/homepage1.jpg');">
-        <h1>Perfectly</br> Personalized</h1>
-        <button><a href="/cookie_select" style="text-decoration: none; color: white;">Order Now</button></a>
+    <div id="maincontent">
+        <h1>Custom-Made,<br>Delicious.</h1>
+        <a href="/cookie_select" style="text-decoration: none; color: white;"><button>Order Now</button></a>
     </div>
     <div id="occasions">
         <h1>Cookies & Cupcakes</br> for Every Occasion</h1>
-        <div id="wordoccasions">
-            <h2>Birthdays</h2>
-            <h2>Graduations</h2>
-            <h2>Baby Showers</h2>
-            <h2 style="margin-right: 0px;">Weddings</h2>
+        <div id="birthdays">
+            <h2>BIRTHDAYS</h2>
+            <img src="{% static 'pics/birthday.jpeg' %}" alt="Birthdays">
         </div>
-    </br>
-        <img src="{% static 'pics/birthday.jpeg' %}" alt="Birthdays">
-        <img src="{% static 'pics/grad.jpeg' %}" alt="Grad Parties">
-        <img src="{% static 'pics/baby.jpeg' %}" alt="Baby Shower">
-        <img src="{% static 'pics/wedding.jpeg' %}" alt="Weddings">
+        <div id="grad">
+            <h2>GRADUATIONS</h2>
+            <img src="{% static 'pics/grad.jpeg' %}" alt="Grad Parties">
+        </div>
+        <div id="baby">
+            <h2>HOLIDAYS</h2>
+            <img src="{% static 'pics/Christmas Elf.png' %}" alt="Holidays">
+        </div>
+        <div id="weddings">
+            <h2>WEDDINGS</h2> 
+            <img src="{% static 'pics/wedding.jpeg' %}" alt="Weddings">
+        </div>
+    </div>
+    <div id="more">
+        <a href="/gallery"><button>VIEW MORE DESIGNS</button></a>
     </div>
     <div id="works">
         <h1>How it Works</h1>
         <div id="select">
-            <img src="{% static 'pics/select.png' %}" alt="">
+            <img src="{% static 'pics/schedule icon.png' %}" alt="">
             <h2>Select</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem libero, ut, architecto possimus adipisci omnis quam corrupti ipsam ab cupiditate officia molestias alias praesentium fugiat aliquam numquam enim commodi labore?</p>
+            <p>...the amount of treats you'd like and date you would need them by!</p>
         </div>
         <div id="describe">
-            <img src="{% static 'pics/describe.png' %}" alt="">
+            <img src="{% static 'pics/Describe Icon.png' %}" alt="">
             <h2>Describe</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem libero, ut, architecto possimus adipisci omnis quam corrupti ipsam ab cupiditate officia molestias alias praesentium fugiat aliquam numquam enim commodi labore?</p>
+            <p>...what you would like me to create! You can be as specific as possible or let me know a general idea and I'll help you out!</p>
         </div>
         <div id="enjoy">
-            <img src="{% static 'pics/enjoy.png' %}" alt="">
+            <img src="{% static 'pics/enjoy icon.png' %}" alt="">
             <h2>Enjoy</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem libero, ut, architecto possimus adipisci omnis quam corrupti ipsam ab cupiditate officia molestias alias praesentium fugiat aliquam numquam enim commodi labore?</p>
+            <p>The treats will be ready on the day of pickup.</p>
         </div>
     </div>
     <div id="picline">
-        <img src="{% static 'pics/nurse.jpg' %}" alt="">
-        <img src="{% static 'pics/getwell.jpg' %}" alt="">
-        <img src="{% static 'pics/80.jpg' %}" alt="">
+        <img src="{% static 'pics/Mom & Daughter.png' %}" alt="">
     </div>
     <div id="reviews">
         <div id="r1">
             <img src="{% static 'pics/quotes.png' %}" alt="">
-        <h2>Sweet Petite cookies are second to none! The delicious fresh taste complimented by the outstanding artistic designs on the cookies make them the best around. Can't wait to buy more!</h2>
-        <h3>- Chris Ackett</h3>
+        <h2>Sweet Petite cookies are second to none! The delicious fresh taste complimented by the outstanding artistic designs on the cookies make them the best around.</h2>
         </div>
         <div id="r2">
             <img src="{% static 'pics/quotes.png' %}" alt="">
         <h2>Best Cookies I have ever eaten. Will definetly be ordering more in the near future.</h2>
-        <h3>- Michael Erickson</h3>
         </div>
         <div id="r3">
             <img src="{% static 'pics/quotes.png' %}" alt="">
         <h2>The designs on the cookies are incredible. They wildly exceeded my expectations and not only were they beautiful, they tasted suberb as well. A must buy!</h2>
-        <h3>- Tim Smith</h3>
         </div>
     </div>
     <div id="creations">
         <h1>My Latest Creations</h1>
-        <img src="{% static 'pics/birthday.jpeg' %}" alt="Birthdays">
-        <img src="{% static 'pics/grad.jpeg' %}" alt="Grad Parties">
-        <img src="{% static 'pics/baby.jpeg' %}" alt="Baby Shower">
-        <img src="{% static 'pics/wedding.jpeg' %}" alt="Weddings">
+        <img src="{% static 'pics/Green Baby Insta.png' %}" alt="Baby Shower" style="margin-left: 2%;">
+        <img src="{% static 'pics/2 Legit 2 Quit.png' %}" alt="Birthday Parties">
+        <img src="{% static 'pics/Easter Eggs.png' %}" alt="Easter">
+        <img src="{% static 'pics/Annie Retirement.png' %}" alt="Retirement">
     </div>
     {% endblock %}
 </body>

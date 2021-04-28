@@ -6,27 +6,35 @@
     </head>
     <div id="menuheading">
         <h2>Menu & Pricing</h2>
+        <h3>Baked Goods</h3>
     </div>
     <div id="cookies">
-        <h3>Decorated Sugar Cookies</h3>
-        <img src="{% static 'baby.jpeg' %}" alt="">
+        <h3>Decorated<br>Sugar Cookies</h3>
+        <img src="{% static 'pics/teacup.png' %}" alt="">
         <p>$32/dozen</p>
-        <p>Personalized exactly how you want them!<br><br></p>
+        <p>Personalized exactly how you want them!</p>
+        <button><a href="/cookie_select" style="text-decoration: none;">Order Cookies</button></a>
+    </div>
+    <div id="diy">
+        <h3>DIY Cookie<br>Decoration Boxes</h3>
+        <img src="{% static 'pics/diy.png' %}" alt="">
+        <p>$25/box</p>
+        <p>Personalized exactly how you want them!</p>
+        <button><a href="/cookie_select" style="text-decoration: none;">Order DIY Box</button></a>
     </div>
     <div id="cupcakes">
-        <h3>Cupcakes</h3>
-        <img src="{% static 'baby.jpeg' %}" alt="">
+        <h3>Cupcakes</h3><br>
+        <img src="{% static 'pics/cupcakes.png' %}" alt="">
         <p>$25/dozen</p>
         <p>Flavors: Vanilla or Chocolate<br>Buttercream Frosting</p>
+        <button><a href="/cookie_select" style="text-decoration: none;">Order Cupcakes</button></a>
     </div>
     <div id="mini">
-        <h3>Mini Cupcakes</h3>
-        <img src="{% static 'baby.jpeg' %}" alt="">
+        <h3>Mini Cupcakes</h3><br>
+        <img src="{% static 'pics/mini.png' %}" alt="">
         <p>$18/dozen</p>
         <p>Flavors: Vanilla or Chocolate<br>Buttercream Frosting</p>
-    </div>
-    <div id="menuorder">
-        <button><a href="/cookie_select" style="text-decoration: none; color: black;">Order Now</button></a>
+        <button><a href="/cookie_select" style="text-decoration: none;">Order Minis</button></a>
     </div>
     {% endblock %}
 
