@@ -14,20 +14,24 @@
 </head>
 <body>
     <div id="navbar">
+        <h2><a href="/">Home</a></h2>
         <h2><a href="/my_story">My Story</a></h2>
         <h2><a href="/gallery">Gallery</a></h2>
         <h2><a href="/menu">Menu</a></h2>
-        <h2><a href="/faq">FAQ</a></h2>
         <a href="/"><img src="{% static 'pics/Logo (1).png' %}" alt="Logo"></a>
-        <button><a href="/cookie_select" style="text-decoration: none; color: white;">Order</button></a>
+        <h2><a href="/contact">Contact Us</a></h2>
+        <h2><a href="/faq">FAQ</a></h2>
+        <a href="/cookie_select" ><button style="text-decoration: none; color: white;">Order</button></a>
     </div>
     <div id="collapse">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
             <a href="#">My Story</a>
             <a href="#">Gallery</a>
             <a href="#">Menu</a>
             <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
         </div>
         <div id="main">
             <button class="openbtn" onclick="openNav()">&#9776;</button>

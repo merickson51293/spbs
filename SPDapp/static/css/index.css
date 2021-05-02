@@ -160,7 +160,7 @@
     }
 }
 
-#navbar > button{
+#navbar > a > button{
     float: right;
     background-color: #143880;
     border-radius: 5px;
@@ -172,6 +172,22 @@
     height: 36px;
     width: 90px;
     vertical-align: top;
+}
+
+@media screen and (max-width: 480px){
+    #navbar > a > button{
+        float: right;
+        background-color: #143880;
+        border-radius: 5px;
+        margin-right: 3%;
+        margin-top: -14%;
+        font-size: 16px;
+        border: #143880;
+        padding: .5%;
+        height: 36px;
+        width: 90px;
+        vertical-align: top;
+}
 }
 
 
@@ -616,8 +632,8 @@ margin-right: 2%;
 #footer{
     background-color: #143880;
     margin-top: 5%;
-    height: 320px;
-    padding-top: 120px;
+    height: 200px;
+    padding-top: 50px;
 }
 
 @media screen and (max-width: 480px){
@@ -748,7 +764,7 @@ margin-right: 2%;
 
 #footer > p{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;

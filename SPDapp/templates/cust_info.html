@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <body>
-    This is the form for ordering cookies!
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/orderform.css' %}">
+    </head>
     <form action="/create_cookie_order" method="post">
     {% csrf_token %}
     <p>First Name: <input type="text" name="first_name" id="first_name"></p>
