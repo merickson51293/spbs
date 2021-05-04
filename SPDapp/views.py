@@ -20,3 +20,6 @@ def menu(request):
 
 def faq(request):
     return render(request, "FAQ.html")
+
+def contact(request):
+    return render(request, "contact.html")

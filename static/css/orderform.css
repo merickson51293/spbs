@@ -1,0 +1,30 @@
+*{
+    font-family: 'Kiwi Maru', serif;
+}
+
+#center{
+    text-align: center;
+}
+
+#top > p{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#top >h1{
+    color: #143880
+}
+
+#top{
+    width: 80%;
+    margin-left: 10%;
+}
+
+#img{
+padding-left:10%;
+}
+
+#dozen{
+    width: 5%;
+}
+

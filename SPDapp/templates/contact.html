@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+    {% block content %} 
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    </head>
+    <form action="https://getform.io/f/9a576e7e-7144-4164-89ff-c756c89f21dd" method="POST">
+
+        <p>Name: <input type="text" name="name"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>Message: <textarea name="message"></textarea></p>
+        <button type="submit">Send</button>
+      
+      </form>
+    {% endblock %}
+</body>
+</html>

@@ -11,7 +11,7 @@
         Please Note: Your order is not complete until I contact you for confirmation. </p>
         </div>
         
-    <form action="https://getform.io/f/4af6843a-9a83-4913-94e3-7343455acbf5" method="POST">
+    <form action="https://getform.io/f/4af6843a-9a83-4913-94e3-7343455acbf5" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     <div id="contactinfo">
         <h2>Contact Information</h2>
@@ -28,7 +28,6 @@
             <option value="cupcakes">Cupcakes</option>
             <option value="mini_cupcakes">Mini Cupcakes</option>
         </select>
-    </br>
     <br>
         <h2>What is the occasion?</h2>
         <input type="text" name="occasion" id="occasion" style="width: 30%; height: 50px;">

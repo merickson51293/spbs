@@ -1,0 +1,49 @@
+#menuheading > h2{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 48pt;
+    color:#143880;
+}
+
+#menuheading >h3{
+    text-align: center;
+    font-size: 32px;
+}
+
+#cookies, #cupcakes, #mini, #diy{
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    background-color: #E5EBF0;
+    height: 100%;
+    margin-top: 1%;
+    margin-left: 2.3%;
+    margin-right: 2.3%;
+    border-radius: 15px;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div > p{
+    font-size: 14px;
+}
+div > img{
+    width: 50%;
+}
+
+div > button{
+    text-align: center;
+    background-color: #E5EBF0;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    font-size: 16px;
+    border: black 2px solid;
+    padding: .5%;
+    width: 196px;
+    height: 56px;
+    border: 2px solid #143880;
+}
+
+div > button > a{
+    color: #143880;
+}

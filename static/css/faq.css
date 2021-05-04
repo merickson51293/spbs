@@ -1,0 +1,12 @@
+#faqheading > h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+#questions{
+    text-align: center;
+}
+
+#faqpicture > img{
+    width: 19.8%;
+}
