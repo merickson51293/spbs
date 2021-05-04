@@ -5,9 +5,23 @@
         <link rel="stylesheet" href="{% static 'css/orderform.css' %}">
     </head>
     <div id="center">
- 
-    <form action="/custinfo" method="post">
+        <div id="top">
+            <h1>Your Order</h1>
+        <p>Fill out this order form below and I will get in contact with you (typically within one business day) to confirm your order.
+        Please Note: Your order is not complete until I contact you for confirmation. </p>
+        </div>
+        
+    <form action="https://getform.io/f/4af6843a-9a83-4913-94e3-7343455acbf5" method="POST">
     {% csrf_token %}
+    <div id="contactinfo">
+        <h2>Contact Information</h2>
+        <p>Name: <input type="text" name="name" id="first_name"></p>
+        <p>Email: <input type="email" name="email" id="email"></p>
+        <p>Phone Number: <input type="tel" id="phone" name="phone" placeholder="123-456-7890"></p>
+        <p>Todays Date: <input type="date" name="date" id="date"></p>
+    </div>
+    <div id="goods">
+        <h2>Select Your Baked Good</h2>
         <select name="baked_goods" id="baked_goods">
             <option value="" disabled selected>Select your Baked Good</option>
             <option value="cookies">Custom Sugar Cookies</option>
@@ -41,9 +55,11 @@
             <input type="radio" name="box" id="box">Bakery Box
             <br>
             <input type="radio" name="wrapped" id="wrapped">Indivdually wrapped within a bakery box. ($2 charge per dozen)
+    </div>
+    
         <br>
         <br>
-        <input type="submit" value="Next">
+        <input type="submit" value="Submit">
     </form>
 </div>  
     {% endblock %}
