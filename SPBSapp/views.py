@@ -23,3 +23,12 @@ def faq(request):
 
 def contact(request):
     return render(request, "contact.html")
+
+def birthday(request):
+    return render(request, "birthday.html")
+
+def celebration(request):
+    return render(request, "celebration.html")
+
+def holiday(request):
+    return render(request, "holiday.html")

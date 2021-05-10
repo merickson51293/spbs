@@ -10,3 +10,50 @@ div > a > img{
     width: 90%;
     border-radius: 50px;
 }
+
+#pics > img{
+    width: 20%;
+    margin: 2%;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 480px){
+    div > #pics > img{
+        width: 95%;
+        margin: 2%;
+        border-radius: 25px;
+    }
+}
+
+h1{
+    text-align: center;
+    color: #143880;
+}
+
+a > #button{
+    margin-left: 45%;
+    background-color:#143880;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 2px solid #143880;
+}
+
+@media screen and (max-width: 480px){
+    a > #button{
+        margin-left: 35%;
+        background-color:#143880;
+        color: white;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 2px solid #143880;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #holidaycontent{
+    position: relative;
+    bottom: 80px;
+}
+}
+

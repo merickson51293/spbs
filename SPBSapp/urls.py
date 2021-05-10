@@ -10,5 +10,8 @@ urlpatterns = [
     path('gallery', views.gallery),
     path('menu', views.menu), 
     path('faq', views.faq),
-    path('contact', views.contact)
+    path('contact', views.contact),
+    path('birthday', views.birthday),
+    path('celebration', views.celebration),
+    path('holiday', views.holiday)
 ]
