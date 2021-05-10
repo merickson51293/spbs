@@ -1,6 +1,31 @@
 {% extends "base.html" %}
     {% block content %}
-    <h2>Gallery</h2>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+    </head>
+    <div id="birthday">
+        <a href="/birthday" style="text-decoration: none; color: #143880;">
+        <img src="{% static 'pics/birthday.jpeg' %}" alt=""><br>
+        <h2>Birthday's</h2>
+        </a>
+    </div>
+    
+    <div id="celebration">
+        <a href="/celebration" style="text-decoration: none; color: #143880;">
+        <img src="{% static 'pics/grad.jpeg' %}" alt=""><br>
+        <h2>Celebration's</h2>
+        </a>
+    </div>
+    
+    <div id="holiday">
+        <a href="/holiday" style="text-decoration: none; color: #143880;">
+        <img src="{% static 'pics/Christmas Elf.png' %}" alt=""><br>
+        <h2 >Holiday's</h2>
+        </a>    
+    </div>
+    
+
     {% endblock %}
 </body>
 </html>

@@ -1,0 +1,12 @@
+#birthday, #celebration, #holiday{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    
+}
+
+div > a > img{
+    display: inline-block;
+    width: 90%;
+    border-radius: 50px;
+}
