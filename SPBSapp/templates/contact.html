@@ -4,12 +4,15 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/contact.css' %}">
     </head>
+    <h1>Contact Us</h1>
+    <p>Interested in cookies? Want to know more about who we are?<br>Please feel free to contact us and we will get back with you right away.</p>
     <form action="https://getform.io/f/9a576e7e-7144-4164-89ff-c756c89f21dd" method="POST">
 
         <p>Name: <input type="text" name="name"></p>
         <p>Email: <input type="email" name="email"></p>
-        <p>Message: <textarea name="message"></textarea></p>
-        <button type="submit">Send</button>
+        <p>Phone Number: <input type="tel" name="phone" id="phone"></p>
+        <p>Message: </p><textarea name="message" rows="10" cols="70"></textarea>
+        <br><br><button type="submit">Send</button>
       
       </form>
     {% endblock %}

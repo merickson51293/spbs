@@ -4,14 +4,26 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/story.css' %}">
     </head>
-    <div id="storyheading">
-        <h2>My Story</h2>
+    <div id="story">
+        <div id="storyheading">
+            <h2>My Story</h2>
+        </div>
+        <div id="storycontent">
+            <img src="{% static 'pics/baker.png' %}" alt="">
+            <p>Hi everybody! I’m Megan, a self-taught cookie baker and decorator in Metro Detroit. I first fell in love with baking as a child, making all sorts of sweet treats with my mom and grandma.<br><br>
+            
+            My husband and I had just had our first baby and I had decided that leaving my teaching career to stay home with my daughter was what I wanted. At this point, I was making cookies in my spare time for family and friend’s parties, and one night my husband encouraged me to turn my hobby into a business. I quickly brushed off the idea, telling him that I didn’t have the skills, time, or experience needed to do so. Like the good cheerleader he is though, he didn’t let the idea go. He saw potential when I didn’t and continued to encourage me until I finally agreed to give it a try, on a very trial basis. Sweet Petite Bake Shop was born.<br><br>
+             Oh, and for the name - Sweet Petite is what my parents called me when I was little. Along with that,  it only felt right that my business be named after something sweet (my love for baking) and something petite (it was having my daughter and staying home that gave me the opportunity to give this a try)!<br><br>
+            I hope that you enjoy your cookies as much as I enjoy creating them for you!
+            </p>
+            <img id="signature" src="{% static 'pics/signature.png' %}" alt="Signature">
+        </div>
+        <div id="talk">
+            <h1 style="color: white;">Let's Talk Cookies</h1>
+            <a href=""><button>Order Now</button></a>
+        </div>
     </div>
-    <div id="storycontent">
-        <img src="{% static 'pics/birthday.jpeg' %}" alt="">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo esse laudantium accusantium est quis quaerat illum dignissimos fugiat alias repellendus quod in repellat perspiciatis placeat repudiandae, ad magnam. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellat quisquam expedita nihil porro corrupti maxime doloremque ipsam at saepe reprehenderit, vel corporis? Necessitatibus molestiae sunt tempora praesentium veniam laudantium eum!<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo esse laudantium accusantium est quis quaerat illum dignissimos fugiat alias repellendus quod in repellat perspiciatis placeat repudiandae, ad magnam. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellat quisquam expedita nihil porro corrupti maxime doloremque ipsam at saepe reprehenderit, vel corporis? Necessitatibus molestiae sunt tempora praesentium veniam laudantium eum!<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo esse laudantium accusantium est quis quaerat illum dignissimos fugiat alias repellendus quod in repellat perspiciatis placeat repudiandae, ad magnam. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellat quisquam expedita nihil porro corrupti maxime doloremque ipsam at saepe reprehenderit, vel corporis? Necessitatibus molestiae sunt tempora praesentium veniam laudantium eum!<br><br>- Megan Erickson</p>
-        
-    </div>
+    
     {% endblock %}
 </body>
 </html>

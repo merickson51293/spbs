@@ -3,16 +3,90 @@
     font-size: 48px;
 }
 
+@media screen and (max-width: 834px){
+    #story{
+        position: relative;
+        bottom: 100px;
+    }
+}
+
 #storycontent > img{
     width: 60%;
     height: 600px;
     display: inline-block;
 }
 
+@media screen and (max-width: 834px){
+    #storycontent > img{
+        width: 100%;
+        height: 400px;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+}
+
 #storycontent > p{
     display: inline-block;
     width: 35%;
- 
     margin-left: 2%;
     vertical-align: top;
+    position: relative;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 834px){
+    #storycontent > p{
+        display: inline-block;
+        width: 95%;
+        margin-left: 2%;
+        vertical-align: top;
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+#storycontent > #signature{
+    width: 50%;
+    height: 150px;
+    margin-left: 25%;
+    position: relative;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 834px){
+    #storycontent > #signature{
+        width: 75%;
+        height: 150px;
+        margin-left: 10%;
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+#talk{
+    background-image: url('/static/pics/autumn.png');
+    height:200px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#talk{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 834px){
+    #talk{
+        display: none;
+    }
+}
+
+#talk > a > button{
+    position: relative;
+    bottom: 20px;
+    background-color: #143880;
+        border-radius: 10px;
+        font-size: 20px;
+        border: #143880;
+        padding: 1%;
+        color:white;
 }

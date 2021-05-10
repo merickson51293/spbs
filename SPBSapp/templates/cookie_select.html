@@ -8,7 +8,7 @@
         <div id="top">
             <h1>Your Order</h1>
         <p>Fill out this order form below and I will get in contact with you (typically within one business day) to confirm your order.
-        Please Note: Your order is not complete until I contact you for confirmation. </p>
+        <br>Please Note: Your order is not complete until I contact you for confirmation. </p>
         </div>
         
     <form action="https://getform.io/f/4af6843a-9a83-4913-94e3-7343455acbf5" method="POST" enctype="multipart/form-data">
@@ -18,7 +18,7 @@
         <p>Name: <input type="text" name="name" id="first_name"></p>
         <p>Email: <input type="email" name="email" id="email"></p>
         <p>Phone Number: <input type="tel" id="phone" name="phone" placeholder="123-456-7890"></p>
-        <p>Todays Date: <input type="date" name="date" id="date"></p>
+        <p>Todays Date: <input type="date" name="dateordered" id="date"></p>
     </div>
     <div id="goods">
         <h2>Select Your Baked Good</h2>
@@ -30,15 +30,15 @@
         </select>
     <br>
         <h2>What is the occasion?</h2>
-        <input type="text" name="occasion" id="occasion" style="width: 30%; height: 50px;">
+        <textarea name="occasion" id="" cols="30" rows="5"></textarea>
         <h2>When do you need them by?</h2>
             <input type="date" name="date_needed" id="date">
         <h2>Quantity?</h2>
         <p>Minimum order of 1 dozen. Cookies must be ordered by the dozen (expections can be made for larger orders).</p>
-            <input type="number" name="dozen" id="dozen" style="height: 50px; font-size: 30px;">
+            <input type="number" name="dozen" id="dozen" style="height: 50px; width: 50px; font-size: 30px;">
         <br>
         <h2>Design Details</h2>
-            <textarea name="design" id="design" cols="70" rows="10" placeholder="Please let us know what design you are looking for. If you are not sure, we can work with you to create your vision."></textarea>
+            <textarea name="design" id="design" cols="40" rows="10" placeholder="Please let us know what design you are looking for. If you are not sure, we can work with you to create your vision."></textarea>
         <h2>Upload Your Image</h2>
         <p>Have an image that would help describe your vision? Upload it here!</p>
             <!-- <label for="img">Select image:</label> -->
