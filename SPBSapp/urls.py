@@ -13,5 +13,6 @@ urlpatterns = [
     path('contact', views.contact),
     path('birthday', views.birthday),
     path('celebration', views.celebration),
-    path('holiday', views.holiday)
+    path('holiday', views.holiday),
+    path('success', views.success)
 ]

@@ -32,3 +32,6 @@ def celebration(request):
 
 def holiday(request):
     return render(request, "holiday.html")
+
+def success(request):
+    return render(request, "success.html")
