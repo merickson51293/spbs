@@ -24,6 +24,23 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@media screen and (max-width: 834px){
+    #cookies, #cupcakes, #mini, #diy{
+        text-align: center;
+        display: inline-block;
+        width: 98%;
+        background-color: #E5EBF0;
+        height: 100%;
+        margin-top: 1%;
+        margin-left: 2.3%;
+        margin-right: 2.3%;
+        border-radius: 15px;
+        vertical-align: top;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+}
+
 div > p{
     font-size: 14px;
 }
@@ -31,7 +48,7 @@ div > img{
     width: 50%;
 }
 
-div > button{
+div > #button{
     text-align: center;
     background-color: #E5EBF0;
     border-radius: 5px;

@@ -508,8 +508,7 @@ margin-right: 2%;
 
 @media screen and (max-width: 834px){
     #reviews > div > img{
-        position: relative;
-        bottom: 20%;
+        display: none;
     }
 }
 
@@ -524,7 +523,7 @@ margin-right: 2%;
     #reviews > div > h2{
         font-size: 18px;
         position: relative;
-        bottom: 40%;
+        bottom: -20%;
         
     }
 }

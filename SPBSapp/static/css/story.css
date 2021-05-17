@@ -10,6 +10,24 @@
     }
 }
 
+#storycontent > #signature{
+    width: 50%;
+    height: 150px;
+    margin-left: 25%;
+    position: relative;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 834px){
+    #storycontent > #signature{
+        width: 75%;
+        height: 150px;
+        margin-left: 10%;
+        position: relative;
+        bottom: 20px;
+    }
+}
+
 #storycontent > img{
     width: 60%;
     height: 600px;
@@ -45,23 +63,7 @@
     }
 }
 
-#storycontent > #signature{
-    width: 50%;
-    height: 150px;
-    margin-left: 25%;
-    position: relative;
-    bottom: 20px;
-}
 
-@media screen and (max-width: 834px){
-    #storycontent > #signature{
-        width: 75%;
-        height: 150px;
-        margin-left: 10%;
-        position: relative;
-        bottom: 20px;
-    }
-}
 
 #talk{
     background-image: url('/static/pics/autumn.png');

@@ -35,3 +35,6 @@ def holiday(request):
 
 def success(request):
     return render(request, "success.html")
+
+def sucesscontact(request):
+    return render(request, "sucesscontact.html")

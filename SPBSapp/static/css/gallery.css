@@ -2,7 +2,14 @@
     display: inline-block;
     width: 33%;
     text-align: center;
-    
+}
+
+@media screen and (max-width: 480px){
+    #birthday, #celebration, #holiday{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 div > a > img{
@@ -18,7 +25,7 @@ div > a > img{
 }
 
 @media screen and (max-width: 480px){
-    div > #pics > img{
+    #pics > img{
         width: 95%;
         margin: 2%;
         border-radius: 25px;

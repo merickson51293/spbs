@@ -14,5 +14,6 @@ urlpatterns = [
     path('birthday', views.birthday),
     path('celebration', views.celebration),
     path('holiday', views.holiday),
-    path('success', views.success)
+    path('success', views.success),
+    path('successcontact', views.sucesscontact)
 ]
