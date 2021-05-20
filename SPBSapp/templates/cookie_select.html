@@ -30,13 +30,19 @@
         </select>
     <br>
         <h2>What is the occasion?</h2>
-        <textarea name="occasion" id="" cols="30" rows="5"></textarea>
+        <textarea name="occasion" id="" cols="40" rows="5"></textarea>
         <h2>When do you need them by?</h2>
             <input type="date" name="date_needed" id="date">
         <h2>Quantity?</h2>
         <p>Minimum order of 1 dozen. Cookies must be ordered by the dozen (expections can be made for larger orders).</p>
             <input type="number" name="dozen" id="dozen" style="height: 50px; width: 50px; font-size: 30px;">
         <br>
+        <p>Deciding on a cookie design can be difficult. I'm here to help if you would like it!</p>
+            <input type="radio" name="nohelp" id="nohelp">I know what I want!
+            <br>
+            <input type="radio" name="somehelp" id="somehelp">I have a good idea, but could use some help.
+            <br>
+            <input type="radio" name="allhelp" id="allhelp">I have no idea. I'd love a lot of help.
         <h2>Design Details</h2>
             <textarea name="design" id="design" cols="40" rows="10" placeholder="Please let us know what design you are looking for. If you are not sure, we can work with you to create your vision."></textarea>
         <h2>Upload Your Image</h2>
@@ -44,18 +50,7 @@
             <!-- <label for="img">Select image:</label> -->
             <input type="file" id="img" name="img" accept="image/*">
         <h2>How Much Help Would You Like?</h2>
-        <p>Deciding on a cookie design can be difficult. I'm here to help if you would like it!</p>
-            <input type="radio" name="nohelp" id="nohelp">I know what I want!
-            <br>
-            <input type="radio" name="somehelp" id="somehelp">I have a good idea, but could use some help.
-            <br>
-            <input type="radio" name="allhelp" id="allhelp">I have no idea. I'd love a lot of help.
-        <h2>Presentation</h2>
-            <input type="radio" name="box" id="box">Bakery Box
-            <br>
-            <input type="radio" name="wrapped" id="wrapped">Indivdually wrapped within a bakery box. ($2 charge per dozen)
     </div>
-    
         <br>
         <br>
         <input type="submit" value="Submit">
