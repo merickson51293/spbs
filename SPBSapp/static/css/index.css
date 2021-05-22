@@ -173,6 +173,7 @@
     height: 36px;
     width: 90px;
     vertical-align: top;
+    color:white;
 }
 
 @media screen and (max-width: 480px){
